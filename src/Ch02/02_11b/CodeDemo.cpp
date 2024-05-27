@@ -6,7 +6,23 @@
 #include <cstdint>
 
 int main(){
-    
+    int fahrenhite = 100;
+    int celsius;
+
+    celsius = ((float)5 / 9.0) * (fahrenhite - 32);
+
+    std::cout << std::endl;
+    std::cout << "Fahrenhite : " << fahrenhite  << std::endl;
+    std::cout << "Celsius : " << celsius << std::endl;
+
+    float weight = 10.99;
+
+    std::cout << std::endl;
+    std::cout << "Float: " << weight  << std::endl;
+    std::cout << "Integer part: " << (int) weight << std::endl;
+    std::cout << "Fractional part: " << (int)((weight - (int) weight) * 10000) << std::endl;
+// *10000 to get 4 0's
+
     std::cout << std::endl << std::endl;
     return (0);
 }

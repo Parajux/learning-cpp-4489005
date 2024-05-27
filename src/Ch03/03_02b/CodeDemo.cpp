@@ -7,7 +7,9 @@
 
 enum class cow_purpose {dairy, meat, hide, pet};
 
-struct cow{
+class cow{
+    /* public:  //class is privte if not declared as public */
+    private:
     std::string name;
     int age;
     cow_purpose purpose;
