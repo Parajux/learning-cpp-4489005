@@ -17,8 +17,17 @@ int main(){
         std::cout << std::endl << "File not found!" << std::endl;
     else{
         while (!inFile.eof()){
+            /*getline(inFile, str);
+            std::cout << str << std::endl;*/ // prints out text file
+
             getline(inFile, str);
-            std::cout << str << std::endl;
+            std::cout << str << ", ";
+            getline(inFile,str);
+            number = stoi(str);
+            std::cout << number << ", ";
+            getline(inFile,str);
+            letter = str[0];
+            std::cout << letter << std::endl; //prints text file and letter 0/ J 
         }
         inFile.close();
     }
